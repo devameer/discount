@@ -32,9 +32,9 @@ $(document).ready(function(){
 
   });
 
-  new Vivus('serivce-icon-1', {duration: 250, file: '../images/passport.svg'}, myCallback1);
-  new Vivus('serivce-icon-2', {duration: 250, file: '../images/bargain.svg'}, myCallback2);
-  new Vivus('serivce-icon-3', {duration: 250, file: '../images/shake-hands.svg'}, myCallback3);
+  new Vivus('serivce-icon-1', {duration: 200, file: '../images/passport.svg'}, myCallback1);
+  new Vivus('serivce-icon-2', {duration: 200, file: '../images/bargain.svg'}, myCallback2);
+  new Vivus('serivce-icon-3', {duration: 200, file: '../images/shake-hands.svg'}, myCallback3);
 
 function myCallback1() {
     $('#serivce-icon-1 .st0').css({"fill-opacity": "1", "stroke": "transparent"});
