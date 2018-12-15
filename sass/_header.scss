@@ -40,6 +40,10 @@
               color: #fff;
               display: block;
               padding: 15px 10px;
+              transition: all 0.5s;
+              &:hover{
+                color: var(--main-color)
+              }
             }
           }
         }
