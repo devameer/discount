@@ -1,9 +1,12 @@
+/* Start About Us page Section styles */
 .about-us-page {
   padding: 70px 0;
   background-color: #eaeaea;
   .company-ads-sidebar {
     .ad {
       margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
     }
   }
   .about-us-page-content {
@@ -62,3 +65,16 @@
     }
   }
 }
+@media (max-width:991px){
+  .about-us-page .about-us-page-content .about-us-page-service{
+    margin-bottom: 40px;
+  }
+
+}
+@media (max-width:767px){
+  .about-us-page-details{
+    flex-direction: column
+  }
+}
+
+/* End About Us page Section styles */
