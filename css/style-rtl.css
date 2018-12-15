@@ -6,4 +6,26 @@ body {
 .header .main-header .slider .item p {
   text-align: right; }
 
+.company-offers-page .company-offers-content .offers-table table tr td:first-child {
+  text-align: right; }
+
+.company-offers-page .company-offers-content .offers-table table tr td:last-child {
+  text-align: left; }
+
+.about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .media .media-body {
+  text-align: right; }
+
+.about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .details {
+  text-align: right; }
+
+.footer .subscribe-sec h5 {
+  margin-left: 50px; }
+
+.application-page {
+  text-align: right; }
+
+.contact-us .contact-form form label {
+  text-align: right;
+  width: 100%; }
+
 /*# sourceMappingURL=style-rtl.css.map */

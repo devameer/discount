@@ -42,6 +42,7 @@
   .header .main-header .overlay {
     background: rgba(6, 15, 58, 0.6); }
   .header .main-header .nav .navbar-expand-lg {
+    padding: .5rem 0;
     width: 100%; }
     .header .main-header .nav .navbar-expand-lg .navbar-brand {
       color: var(--main-color);
@@ -58,6 +59,8 @@
       line-height: 16.8px;
       padding: 15px 15px; }
       .header .main-header .nav .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: var(--main-color); }
+      .header .main-header .nav .navbar-expand-lg .navbar-nav .nav-link.active {
         color: var(--main-color); }
   .header .main-header .slider {
     height: 500px;
@@ -181,15 +184,18 @@
 .about-us {
   background-color: #fcfcfc;
   padding: 40px 0; }
+  .about-us .about-us-image img {
+    max-width: 350px;
+    display: block; }
   .about-us .about-us-text h2 {
-    text-align: center;
+    text-align: ceabout-us-imagenter;
     color: var(--main-color);
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 60px; }
   .about-us .about-us-text p {
     color: #555555;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
     line-height: 46px;
     text-align: right; }
@@ -399,6 +405,92 @@
     object-fit: contain; }
 
 /* End partners Section styles */
+.contact-us {
+  background-color: #f9f9fa;
+  padding: 70px 0; }
+  .contact-us h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 50px; }
+  .contact-us .contact-form {
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0 0 76px rgba(0, 0, 0, 0.06); }
+    .contact-us .contact-form form .form-group {
+      margin-bottom: 30px; }
+    .contact-us .contact-form form input, .contact-us .contact-form form textarea {
+      height: 45px; }
+      .contact-us .contact-form form input::-webkit-input-placeholder, .contact-us .contact-form form textarea::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #ccc; }
+      .contact-us .contact-form form input::-moz-placeholder, .contact-us .contact-form form textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #ccc; }
+      .contact-us .contact-form form input:-ms-input-placeholder, .contact-us .contact-form form textarea:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #ccc; }
+      .contact-us .contact-form form input:-moz-placeholder, .contact-us .contact-form form textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: #ccc; }
+    .contact-us .contact-form form textarea {
+      height: 200px; }
+    .contact-us .contact-form form label {
+      color: #414141;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 15px; }
+      .contact-us .contact-form form label span {
+        color: #f96922; }
+    .contact-us .contact-form form button {
+      background: var(--main-color);
+      color: #fff;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 16px;
+      padding: 10px 60px;
+      margin-top: 50px;
+      overflow: hidden;
+      position: relative; }
+      .contact-us .contact-form form button span {
+        position: relative;
+        z-index: 212; }
+      .contact-us .contact-form form button:after {
+        position: absolute;
+        content: '';
+        background: var(--second-color);
+        height: 100%;
+        left: -35%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0;
+        z-index: 0; }
+      .contact-us .contact-form form button:hover {
+        background: transparent; }
+        .contact-us .contact-form form button:hover span {
+          color: #fff; }
+        .contact-us .contact-form form button:hover:after {
+          height: 100%;
+          width: 135%; }
+
+@media (max-width: 550px) {
+  .contact-us h2 {
+    font-size: 25px; }
+
+  .contact-us .contact-form form label {
+    font-size: 14px;
+    margin-bottom: 10px; }
+
+  .contact-us .contact-form form input {
+    height: 35px; }
+
+  .contact-us .contact-form form .form-group {
+    margin-bottom: 20px; } }
 .footer {
   background: var(--second-color);
   padding-top: 70px;
@@ -420,7 +512,7 @@
       color: #ffffff;
       font-size: 18px;
       font-weight: 400;
-      margin-left: 50px; }
+      margin-right: 50px; }
     .footer .subscribe-sec form {
       display: flex;
       height: 45px; }
@@ -515,15 +607,12 @@
       .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text {
         min-width: 300px;
         padding: 40px; }
-        .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .media .media-body {
-          text-align: right; }
-          .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .media .media-body h5 {
-            color: #fff; }
-          .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .media .media-body span {
-            color: var(--main-color); }
+        .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .media .media-body h5 {
+          color: #fff; }
+        .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .media .media-body span {
+          color: var(--main-color); }
         .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .details {
           list-style: none;
-          text-align: right;
           color: #fff;
           margin-top: 30px; }
           .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .details li {
@@ -553,7 +642,6 @@
     flex-direction: column; } }
 /* End About Us page Section styles */
 .application-page {
-  text-align: right;
   background-image: url(../images/Arab-Business.-HQ-Picture-152.png);
   background-color: #eeeeee;
   padding: 40px 0; }
@@ -671,9 +759,9 @@
         width: 16.666667%;
         padding: 25px 0.75rem; }
         .company-offers-page .company-offers-content .offers-table table tr td:first-child {
-          text-align: right; }
-        .company-offers-page .company-offers-content .offers-table table tr td:last-child {
           text-align: left; }
+        .company-offers-page .company-offers-content .offers-table table tr td:last-child {
+          text-align: right; }
       .company-offers-page .company-offers-content .offers-table nav {
         margin-top: 50px; }
         .company-offers-page .company-offers-content .offers-table nav ul {

@@ -30,6 +30,8 @@ $(document).ready(function(){
        
     });
 
+
+    
   });
 
   new Vivus('serivce-icon-1', {duration: 200, file: '../images/passport.svg'}, myCallback1);
@@ -100,3 +102,26 @@ $('.firstActiveItem').on('click',function(){
 });
 });
 
+
+
+
+//load jquery first
+$(document).ready(function () {
+    //save menu height because fixed element height is not counted on page
+    var menuHeight = $('.fixed-menu').outerHeight();
+    //add its height as padding to content
+    $('.page-content-wrapper').css('padding-top', menuHeight);
+    //click function  
+    $(".scroll-btn").on("click", function (e) {
+        // clear default link behavour
+        e.preventDefault();
+        //save cliked link href atribute
+        var target = $(this).attr('href');
+        //save podition top of tagget element
+        var	position = $(target).offset().top;
+        //animate page, easy scroll to distanation except menu height
+        $("html, body").animate({scrollTop: position - menuHeight}, '500');
+        return false;
+    });
+
+});

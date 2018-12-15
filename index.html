@@ -72,7 +72,7 @@
           <div class="container">
             <div class="nav">
               <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">بطاقة تخفيض</a>
+                <a class="navbar-brand" href="index.html">بطاقة تخفيض</a>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -95,7 +95,7 @@
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="about-us.html">من نحن</a>
+                      <a class="nav-link scroll-btn"  href="#about-us">من نحن</a>
                     </li>
 
                     <li class="nav-item">
@@ -110,7 +110,7 @@
                       <a class="nav-link" href="company-offers.html">دليل الشركات والعروض</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">إتصل بنا</a>
+                      <a class="nav-link scroll-btn" href="#contact-us">إتصل بنا</a>
                     </li>
                   </ul>
                 </div>
@@ -152,7 +152,7 @@
     </section>
     <!-- End header Section -->
     <!-- Start About Us Section -->
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 col-md-8">
@@ -310,7 +310,7 @@
       </section>
     <!-- End Testimonials Section -->
     <!-- Start Partners Section -->
-      <div class="partners">
+      <section class="partners">
         <div class="container">
           <div class="owl-carousel owl-theme" id="partners-slider">
             <div class="item">
@@ -331,8 +331,74 @@
     
         </div>
         </div>
+      </section>
+    <!-- End Partners Section -->
+    <!-- Start Contact Us section -->
+    <section class="contact-us" id="contact-us">
+      <div class="container">
+        <h2>إتصل بنا</h2>
+        <div class="contact-form">
+          <form>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="FullName">الإسم <span>*</span></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="FullName"
+                    placeholder="الإسم *"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="Emaila"
+                    >الإيميل <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Emaila"
+                    placeholder="الإيميل *"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label for="subjectTitle">عنوان الرسالة <span>*</span></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subjectTitle"
+                    placeholder="عنوان الرسالة *"
+                  />
+                </div>
+              </div>
+             
+            </div>
+       
+
+            <div class="form-group">
+              <label for="DiscountDetailsForCardholders"
+                >الرسالة <span>*</span></label
+              >
+              <textarea
+                class="form-control"
+                id="DiscountDetailsForCardholders"
+                rows="3"
+                placeholder="تفاصيل الخصومات لحاملي البطاقة *"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn"><span> إرسل الرسالة</span></button>
+          </form>
+        </div>
       </div>
-    <!-- Start Partners Section -->
+    </section>
+        <!-- End Contact Us section -->
+
     <!-- Start Footer Section -->
     <section class="footer">
       <div class="container">

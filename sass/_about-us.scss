@@ -5,11 +5,14 @@
   padding: 40px 0;
   .about-us-image {
     img {
+      max-width: 350px;
+      display: block;
+      
     }
   }
   .about-us-text {
     h2 {
-      text-align: center;
+      text-align: ceabout-us-imagenter;
       color: var(--main-color);
       font-size: 36px;
       font-weight: 700;
@@ -17,7 +20,7 @@
     }
     p {
       color: #555555;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
       line-height: 46px;
       text-align: right;

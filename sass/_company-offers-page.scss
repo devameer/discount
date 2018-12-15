@@ -38,10 +38,10 @@
             width: 16.666667%;
             padding: 25px 0.75rem;
             &:first-child {
-              text-align: right;
+              text-align: left;
             }
             &:last-child {
-              text-align: left;
+              text-align: right;
             }
           }
         }
