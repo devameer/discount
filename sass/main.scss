@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color : #f96922;
+
+    --second-color : #050c3a;
+}
+@import 'header';
+@import 'about-us';
+@import 'choose-company';
+@import 'services';
+@import 'testimonials';
+
+
+@import 'footer';
+@import 'about-us-page';
+@import 'application';
+@import 'company-offers-page';

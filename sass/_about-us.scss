@@ -1,0 +1,38 @@
+/* Start About Us Section styles */
+
+.about-us {
+  background-color: #fcfcfc;
+  padding: 40px 0;
+  .about-us-image {
+    img {
+    }
+  }
+  .about-us-text {
+    h2 {
+      text-align: center;
+      color: var(--main-color);
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 60px;
+    }
+    p {
+      color: #555555;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 46px;
+      text-align: right;
+    }
+  }
+}
+@media (max-width: 767px){
+.about-us-text{
+  margin-bottom: 50px;
+}
+}
+@media (max-width: 450px){
+  .about-us .about-us-text p{
+    font-size: 15px;
+  }
+}
+
+/* End About Us Section styles */

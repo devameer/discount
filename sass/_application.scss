@@ -1,0 +1,60 @@
+.application-page {
+  text-align: right;
+  background-image: url(../images/Arab-Business.-HQ-Picture-152.png);
+  background-color: #eeeeee;
+  padding: 40px 0;
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--main-color);
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .apply-form {
+    background: #fff;
+    padding: 50px;
+    form {
+      .form-group {
+        margin-bottom: 30px;
+      }
+      input {
+        height: 45px;
+        &::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          color: #ccc;
+        }
+        &::-moz-placeholder {
+          /* Firefox 19+ */
+          color: #ccc;
+        }
+        &:-ms-input-placeholder {
+          /* IE 10+ */
+          color: #ccc;
+        }
+        &:-moz-placeholder {
+          /* Firefox 18- */
+          color: #ccc;
+        }
+      }
+      label {
+        color: #414141;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        span {
+          color: #f96922;
+        }
+      }
+      button {
+        background: var(--main-color);
+        color: #fff;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 16px;
+        padding: 10px 60px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
