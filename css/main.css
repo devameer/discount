@@ -401,7 +401,7 @@
 /* End partners Section styles */
 .footer {
   background: var(--second-color);
-  padding-top: 100px;
+  padding-top: 70px;
   position: relative; }
   .footer:after {
     content: "";
@@ -568,20 +568,22 @@
     padding: 50px; }
     .application-page .apply-form form .form-group {
       margin-bottom: 30px; }
-    .application-page .apply-form form input {
+    .application-page .apply-form form input, .application-page .apply-form form textarea {
       height: 45px; }
-      .application-page .apply-form form input::-webkit-input-placeholder {
+      .application-page .apply-form form input::-webkit-input-placeholder, .application-page .apply-form form textarea::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
         color: #ccc; }
-      .application-page .apply-form form input::-moz-placeholder {
+      .application-page .apply-form form input::-moz-placeholder, .application-page .apply-form form textarea::-moz-placeholder {
         /* Firefox 19+ */
         color: #ccc; }
-      .application-page .apply-form form input:-ms-input-placeholder {
+      .application-page .apply-form form input:-ms-input-placeholder, .application-page .apply-form form textarea:-ms-input-placeholder {
         /* IE 10+ */
         color: #ccc; }
-      .application-page .apply-form form input:-moz-placeholder {
+      .application-page .apply-form form input:-moz-placeholder, .application-page .apply-form form textarea:-moz-placeholder {
         /* Firefox 18- */
         color: #ccc; }
+    .application-page .apply-form form textarea {
+      height: 200px; }
     .application-page .apply-form form label {
       color: #414141;
       font-size: 16px;
@@ -597,14 +599,52 @@
       margin-left: auto;
       font-size: 16px;
       padding: 10px 60px;
-      margin-top: 50px; }
+      margin-top: 50px;
+      overflow: hidden;
+      position: relative; }
+      .application-page .apply-form form button span {
+        position: relative;
+        z-index: 212; }
+      .application-page .apply-form form button:after {
+        position: absolute;
+        content: '';
+        background: var(--second-color);
+        height: 100%;
+        left: -35%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0;
+        z-index: 0; }
+      .application-page .apply-form form button:hover {
+        background: transparent; }
+        .application-page .apply-form form button:hover span {
+          color: #fff; }
+        .application-page .apply-form form button:hover:after {
+          height: 100%;
+          width: 135%; }
 
+@media (max-width: 550px) {
+  .application-page h2 {
+    font-size: 25px; }
+
+  .application-page .apply-form form label {
+    font-size: 14px;
+    margin-bottom: 10px; }
+
+  .application-page .apply-form form input {
+    height: 35px; }
+
+  .application-page .apply-form form .form-group {
+    margin-bottom: 20px; } }
+/* Start company offers page Section Styles */
 .company-offers-page {
   background: #eaeaea;
   padding-bottom: 50px; }
   .company-offers-page .company-offers-page-head {
     background-image: url(../images/offers.png);
-    height: 340px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -653,5 +693,20 @@
           .company-offers-page .company-offers-content .offers-table nav li a.active, .company-offers-page .company-offers-content .offers-table nav li a:hover {
             background: var(--second-color);
             color: #fff; }
+  .company-offers-page .offers-ads {
+    margin-top: 30px; }
+    .company-offers-page .offers-ads .offers-ads-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .company-offers-page .offers-ads .offers-ads-inner .ad {
+        margin-bottom: 30px; }
+        .company-offers-page .offers-ads .offers-ads-inner .ad img {
+          max-width: 100%; }
+
+@media (max-width: 767px) {
+  .company-offers-page .offers-ads .offers-ads-inner {
+    justify-content: center; } }
+/* End company offers page Section Styles */
 
 /*# sourceMappingURL=main.css.map */

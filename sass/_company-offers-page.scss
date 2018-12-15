@@ -1,9 +1,10 @@
+/* Start company offers page Section Styles */
 .company-offers-page {
   background: #eaeaea;
   padding-bottom: 50px;
   .company-offers-page-head {
     background-image: url(../images/offers.png);
-    height: 340px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,4 +74,24 @@
       }
     }
   }
+  .offers-ads{
+    margin-top: 30px;
+    .offers-ads-inner{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    .ad{
+      margin-bottom: 30px;
+      img{
+        max-width: 100%;
+      }
+    }    }
+  }
 }
+@media (max-width:767px){
+  .company-offers-page .offers-ads .offers-ads-inner{
+    justify-content: center;
+  }
+}
+
+/* End company offers page Section Styles */

@@ -17,7 +17,7 @@
       .form-group {
         margin-bottom: 30px;
       }
-      input {
+      input ,textarea {
         height: 45px;
         &::-webkit-input-placeholder {
           /* Chrome/Opera/Safari */
@@ -35,6 +35,9 @@
           /* Firefox 18- */
           color: #ccc;
         }
+      }
+      textarea{
+        height: 200px;
       }
       label {
         color: #414141;
@@ -54,7 +57,53 @@
         font-size: 16px;
         padding: 10px 60px;
         margin-top: 50px;
+        overflow: hidden;
+        position: relative;
+        span{
+          position: relative;
+          z-index: 212;
+        }
+        &:after{
+          position: absolute;
+          content: '';
+          background: var(--second-color);
+          height: 100%;
+          left: -35%;
+          top: 0;
+          transform: skew(50deg);
+          transition-duration: 0.6s;
+          transform-origin: top left;
+          width: 0;
+          z-index: 0;
+
+        }
+        &:hover{
+          background: transparent;
+          span{
+            color: #fff
+          }
+          &:after{
+            height: 100%;
+            width: 135%;
+          }
+        }
       }
     }
+  }
+}
+
+@media (max-width:550px){
+  .application-page h2{
+    font-size: 25px;
+  }
+  .application-page .apply-form form label{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .application-page .apply-form form input{
+    height: 35px;
+  }
+  .application-page .apply-form form .form-group{
+    margin-bottom: 20px;
   }
 }
