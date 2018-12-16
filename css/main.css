@@ -79,8 +79,8 @@
       display: flex;
       justify-content: center; }
       .header .main-header .slider .owl-dots button {
-        width: 17px;
-        height: 17px;
+        width: 15px;
+        height: 15px;
         border: 1px solid #ffffff;
         border-radius: 50%;
         margin: 0 5px;
@@ -116,6 +116,8 @@
     background: #fff; }
     .header .main-header.pages .overlay {
       background: none; }
+    .header .main-header.pages .nav .navbar-toggler {
+      color: #000; }
     .header .main-header.pages .nav .navbar-nav .nav-link {
       color: #555; }
 
@@ -181,7 +183,10 @@
   .header .main-header .nav .navbar-expand-lg .navbar-nav {
     background: rgba(6, 15, 58, 0.6);
     padding: 20px;
-    text-align: right; } }
+    text-align: right; }
+
+  .header .main-header.pages .nav .navbar-nav .nav-link {
+    color: #fff; } }
 /* End header Section styles */
 /* Start About Us Section styles */
 .about-us {
@@ -189,19 +194,22 @@
   padding: 40px 0; }
   .about-us .about-us-image img {
     max-width: 350px;
-    display: block; }
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
   .about-us .about-us-text h2 {
     text-align: ceabout-us-imagenter;
     color: var(--main-color);
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    text-align: center; }
   .about-us .about-us-text p {
     color: #555555;
     font-size: 17px;
     font-weight: 700;
     line-height: 46px;
-    text-align: right; }
+    text-align: justify; }
 
 @media (max-width: 767px) {
   .about-us-text {
@@ -595,43 +603,43 @@
     min-width: auto;
     width: auto; } }
 /* Start About Us page Section styles */
-.about-us-page {
+.Company-page {
   padding: 70px 0;
   background-color: #eaeaea; }
-  .about-us-page .company-ads-sidebar .ad {
+  .Company-page .company-ads-sidebar .ad {
     margin-bottom: 30px;
     display: flex;
     justify-content: center; }
-  .about-us-page .about-us-page-content {
+  .Company-page .about-us-page-content {
     background: #fff; }
-    .about-us-page .about-us-page-content .about-us-page-details {
+    .Company-page .about-us-page-content .about-us-page-details {
       background: var(--second-color);
       display: flex; }
-      .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text {
+      .Company-page .about-us-page-content .about-us-page-details .about-us-page-details-text {
         min-width: 300px;
         padding: 40px; }
-        .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .media .media-body h5 {
+        .Company-page .about-us-page-content .about-us-page-details .about-us-page-details-text .media .media-body h5 {
           color: #fff; }
-        .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .media .media-body span {
+        .Company-page .about-us-page-content .about-us-page-details .about-us-page-details-text .media .media-body span {
           color: var(--main-color); }
-        .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .details {
+        .Company-page .about-us-page-content .about-us-page-details .about-us-page-details-text .details {
           list-style: none;
           color: #fff;
           margin-top: 30px; }
-          .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-text .details li {
+          .Company-page .about-us-page-content .about-us-page-details .about-us-page-details-text .details li {
             margin-bottom: 10px; }
-      .about-us-page .about-us-page-content .about-us-page-details .about-us-page-details-img img {
+      .Company-page .about-us-page-content .about-us-page-details .about-us-page-details-img img {
         height: 100%;
         object-fit: cover; }
-    .about-us-page .about-us-page-content .about-us-page-service {
+    .Company-page .about-us-page-content .about-us-page-service {
       padding: 40px 20px;
       text-align: right; }
-      .about-us-page .about-us-page-content .about-us-page-service h2 {
+      .Company-page .about-us-page-content .about-us-page-service h2 {
         color: #4c4c4c;
         font-size: 17px;
         font-weight: 700;
         margin-bottom: 30px; }
-      .about-us-page .about-us-page-content .about-us-page-service p {
+      .Company-page .about-us-page-content .about-us-page-service p {
         color: #555555;
         font-size: 16px;
         font-weight: 400;
@@ -761,6 +769,8 @@
         text-align: center;
         width: 16.666667%;
         padding: 25px 0.75rem; }
+        .company-offers-page .company-offers-content .offers-table table tr td .offer-link {
+          color: var(--main-color); }
         .company-offers-page .company-offers-content .offers-table table tr td:first-child {
           text-align: left; }
         .company-offers-page .company-offers-content .offers-table table tr td:last-child {
