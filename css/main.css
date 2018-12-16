@@ -180,13 +180,13 @@
     text-align: right; }
 
   .header .main-header.pages .nav .navbar-nav .nav-link {
-    color: #fff; } }
-.header .main-header .slider .owl-dots {
-  display: flex;
-  justify-content: center;
-  position: static;
-  transform: translateX(0%); }
+    color: #fff; }
 
+  .header .main-header .slider .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: static;
+    transform: translateX(0%); } }
 @media (min-width: 550px) and (max-width: 850px) {
   .header .main-header .slider .item p {
     font-size: 20px;
