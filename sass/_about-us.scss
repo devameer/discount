@@ -5,7 +5,6 @@
   padding: 40px 0;
   .about-us-image {
     img {
-      max-width: 350px;
       display: block;
       margin-right: auto;
       margin-left: auto;
@@ -42,3 +41,17 @@
 }
 
 /* End About Us Section styles */
+
+@media (min-width:992px){
+  .about-us .about-us-image img {
+    max-width: 350px;
+   
+}
+}
+
+@media (min-width:400px) and (max-width:767){
+  .about-us .about-us-image img {
+    max-width: 350px;
+   
+}
+}

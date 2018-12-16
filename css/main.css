@@ -77,10 +77,14 @@
       line-height: 46px; }
     .header .main-header .slider .owl-dots {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      transform: translateX(-50%); }
       .header .main-header .slider .owl-dots button {
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
         border: 1px solid #ffffff;
         border-radius: 50%;
         margin: 0 5px;
@@ -169,6 +173,20 @@
 
   .header .main-header .slider .owl-nav button.owl-prev {
     right: -5%; } }
+@media (max-width: 991px) {
+  .header .main-header .nav .navbar-expand-lg .navbar-nav {
+    background: rgba(6, 15, 58, 0.6);
+    padding: 20px;
+    text-align: right; }
+
+  .header .main-header.pages .nav .navbar-nav .nav-link {
+    color: #fff; } }
+.header .main-header .slider .owl-dots {
+  display: flex;
+  justify-content: center;
+  position: static;
+  transform: translateX(0%); }
+
 @media (min-width: 550px) and (max-width: 850px) {
   .header .main-header .slider .item p {
     font-size: 20px;
@@ -178,22 +196,21 @@
     height: 410px; }
 
   .header .main-header .nav .navbar-expand-lg .navbar-brand {
-    font-size: 17px; } }
-@media (max-width: 991px) {
-  .header .main-header .nav .navbar-expand-lg .navbar-nav {
-    background: rgba(6, 15, 58, 0.6);
-    padding: 20px;
-    text-align: right; }
+    font-size: 17px; }
 
-  .header .main-header.pages .nav .navbar-nav .nav-link {
-    color: #fff; } }
+  .header .main-header .slider .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute !important;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%) !important; } }
 /* End header Section styles */
 /* Start About Us Section styles */
 .about-us {
   background-color: #fcfcfc;
   padding: 40px 0; }
   .about-us .about-us-image img {
-    max-width: 350px;
     display: block;
     margin-right: auto;
     margin-left: auto; }
@@ -218,6 +235,12 @@
   .about-us .about-us-text p {
     font-size: 15px; } }
 /* End About Us Section styles */
+@media (min-width: 992px) {
+  .about-us .about-us-image img {
+    max-width: 350px; } }
+@media (min-width: 400px) and (max-width: 767) {
+  .about-us .about-us-image img {
+    max-width: 350px; } }
 /* Start Choose Company Section styles */
 .choose-company {
   background-image: url(../images/Layer_4.png);
@@ -416,6 +439,7 @@
     object-fit: contain; }
 
 /* End partners Section styles */
+/* Start Contact Us Section Style */
 .contact-us {
   background-color: #f9f9fa;
   padding: 70px 0; }
@@ -502,6 +526,8 @@
 
   .contact-us .contact-form form .form-group {
     margin-bottom: 20px; } }
+/* End Contact Us Section Style */
+/* Start Footer Section Style */
 .footer {
   background: var(--second-color);
   padding-top: 70px;
@@ -602,6 +628,7 @@
   .footer .subscribe-sec form input {
     min-width: auto;
     width: auto; } }
+/* End Footer Section Style */
 /* Start About Us page Section styles */
 .Company-page {
   padding: 70px 0;
@@ -652,6 +679,7 @@
   .about-us-page-details {
     flex-direction: column; } }
 /* End About Us page Section styles */
+/* Start style apllication pages */
 .application-page {
   background-image: url(../images/Arab-Business.-HQ-Picture-152.png);
   background-color: #eeeeee;
@@ -737,6 +765,7 @@
 
   .application-page .apply-form form .form-group {
     margin-bottom: 20px; } }
+/* End style apllication pages */
 /* Start company offers page Section Styles */
 .company-offers-page {
   background: #eaeaea;
